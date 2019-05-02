@@ -19,4 +19,10 @@ app.use('/v1',routes);
 app.server.listen(config.port);
 console.log('Started on port '+ app.server.address().port);
 
+// var server = app.listen(config.port, function () {
+//     var host = server.address().address;
+//     var port = server.address().port;
+//     console.log('running at http://' + host + ':' + port)
+// });
+
 export default app;
