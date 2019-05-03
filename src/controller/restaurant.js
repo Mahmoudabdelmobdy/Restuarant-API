@@ -40,5 +40,21 @@ export default({ config, db}) => {
         })
     })
 
+    // 'v1/restuarant:id' -Update
+    api.put('/:id',(req, res) => {
+        Restaurant.findById(req.params.id, (err, restuarant) => {
+            if (err) {
+                res.send(err);
+            }
+            restuarant.name = req.body.name;
+            restuarant.save(err => {
+                if (err) {
+                    res.send(err);
+                }
+                res.json({message : 'Restuarant info updated'});
+            });
+        });
+    })
+
     return api;
 }
