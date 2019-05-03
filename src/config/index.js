@@ -1,4 +1,5 @@
 export default {
-    "port": 3009,
-    "mongoURL": 'mongodb://localhost:27017/restuarant-api'
+    "port": 3005,
+    "mongoURL": 'mongodb://localhost:27017/restaurant-api',
+    "bodyLimit": "100kb"
 }

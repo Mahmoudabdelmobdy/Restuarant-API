@@ -1,7 +1,7 @@
 {
-  "name": "restuarant-api",
+  "name": "restaurant-api",
   "version": "0.0.1",
-  "description": "Restuarant RESTful API",
+  "description": "Restaurant RESTful API",
   "main": "dist",
   "scripts": {
     "dev": "NODE_ENV=development nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
