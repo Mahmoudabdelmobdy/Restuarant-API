@@ -20,5 +20,25 @@ export default({ config, db}) => {
         });
     });
 
+    // '/v1/restaurant' - Read
+    api.get('/', (req, res) => {
+        Restaurant.find({}, (err, restaurants) => {
+            if (err) {
+                res.send(err);
+            }
+            res.json(restaurants);
+        });
+    });
+
+    // '/v1/restuarant:id' - Read 1
+    api.get('/:id',(req, res) => {
+        Restaurant.findById(req.params.id, (err, restaurant) => {
+            if (err) {
+                res.send(err);
+            }
+            res.json(restaurant);
+        })
+    })
+
     return api;
 }
