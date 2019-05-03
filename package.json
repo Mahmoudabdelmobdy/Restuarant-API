@@ -11,7 +11,7 @@
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\"  && exit 1"
   },
-  "eslintConfig":{
+  "eslintConfig": {
     "parserOptions": {
       "ecmaVersion": 7,
       "sourceType": "module"
@@ -29,7 +29,8 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.16.4",
-    "mongoose": "^5.5.5"
+    "mongoose": "^5.5.5",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

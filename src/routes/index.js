@@ -1,8 +1,8 @@
 import express from 'express';
 import config from '../config';
 import middleware from '../middleware';
-import initializaDb from '../db'
-import restaurant from '../controller/restaurant'
+import initializaDb from '../db';
+import restaurant from '../controller/restaurant';
 // import app from '..';
 
 let router = express();
